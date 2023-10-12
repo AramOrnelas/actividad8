@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>649</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QPlainTextEdit" name="seeBox"/>
+    </item>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>ID</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>VOLTAJE</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>POSICION X</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>POSICION Y</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>RED</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>GREEN </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>BLUE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QSpinBox" name="id"/>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="volt"/>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="pos_x"/>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="pos_y"/>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="red"/>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="green"/>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="blue"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QPushButton" name="agregarFinal">
+          <property name="text">
+           <string>AGREGAR AL FINAL </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="agregarInicio">
+          <property name="text">
+           <string>AGREGAR AL INICIO</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="bmostrar">
+          <property name="text">
+           <string>MOSTRAR</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="2">
+     <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="lineId"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="busId">
+      <property name="text">
+       <string>Buscar ID</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>layoutWidget</zorder>
+   <zorder>seeBox</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>lineId</zorder>
+   <zorder>busId</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>649</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionCargar"/>
+    <addaction name="actionguardar"/>
+   </widget>
+   <addaction name="menufile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCargar">
+   <property name="text">
+    <string>Cargar</string>
+   </property>
+  </action>
+  <action name="actionguardar">
+   <property name="text">
+    <string>guardar</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
